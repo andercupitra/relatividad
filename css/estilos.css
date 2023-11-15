@@ -1,0 +1,291 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+header {
+    position: relative;
+    text-align: center;
+    color: white;
+    background: #3b5998;
+    padding: 70px 0 100px;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    font-size: 18px;
+}
+
+section.textos-header {
+    margin-top: 50px;
+}
+
+section.textos-header h1 {
+    font-size: 2.5em;
+}
+
+section.textos-header h2 {
+    font-size: 1.5em;
+}
+
+main {
+    padding: 50px 20px;
+}
+
+section.contenedor {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+section.contenedor h2 {
+    font-size: 2em;
+}
+
+.contenedor-sobre-nosotros {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.titulo {
+    color: red;
+    font-size: 60px;
+}
+
+.imagen-about-us {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.contenido-textos {
+    max-width: 400px;
+    margin-top: 20px;
+}
+
+.contenido-textos h3 {
+    font-size: 1.5em;
+}
+
+.contenido-textos p {
+    font-size: 1em;
+}
+
+.portafolio {
+    background-color: #f0f0f0;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.galeria-port {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.imagen-port {
+    width: 100%;
+    max-width: 400px;
+    margin: 20px 0;
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.imagen-port img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.hover-galery {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: 8px;
+}
+
+.hover-galery p {
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.imagen-port:hover .hover-galery {
+    opacity: 1;
+}
+
+section.about.services {
+    background-color: #f0f0f0;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.servicio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.servicio-ind {
+    max-width: 300px;
+    margin: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.servicio-ind img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.servicio-ind h3 {
+    margin-top: 15px;
+    font-size: 1.5em;
+}
+
+.servicio-ind p {
+    font-size: 1em;
+}
+
+footer {
+    background-color: #3b5998;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.contenedor-footer {
+    display: flex;
+    justify-content: space-around;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.content-footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.content-foo {
+    max-width: 200px;
+    text-align: center;
+}
+
+.titulo.final {
+    font-size: 1em;
+    margin-top: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+    header {
+        padding: 50px 0 80px;
+    }
+
+    section.textos-header h1 {
+        font-size: 1.8em;
+    }
+
+    section.textos-header h2 {
+        font-size: 1.2em;
+    }
+
+    main {
+        padding: 30px 10px;
+    }
+
+    section.contenedor {
+        padding: 30px 10px;
+    }
+
+    .contenedor-sobre-nosotros {
+        flex-direction: column;
+    }
+
+    .imagen-about-us {
+        max-width: 100%;
+        margin-top: 20px;
+    }
+
+    .contenido-textos {
+        max-width: none;
+        margin-top: 20px;
+    }
+
+    .contenido-textos h3 {
+        font-size: 1.3em;
+    }
+
+    .contenido-textos p {
+        font-size: 1em;
+    }
+
+    .portafolio {
+        padding: 30px 10px;
+    }
+
+    .galeria-port {
+        flex-direction: column;
+    }
+
+    .imagen-port {
+        max-width: 100%;
+        margin: 20px 0;
+    }
+
+    .hover-galery p {
+        font-size: 1.2em;
+    }
+
+    section.about.services {
+        padding: 30px 10px;
+    }
+
+    .servicio {
+        flex-direction: column;
+    }
+
+    .servicio-ind {
+        max-width: 100%;
+        margin: 20px 0;
+    }
+
+    .servicio-ind h3 {
+        font-size: 1.3em;
+    }
+
+    .servicio-ind p {
+        font-size: 1em;
+    }
+
+    footer {
+        padding: 10px 0;
+    }
+
+    .contenedor-footer {
+        flex-direction: column;
+    }
+
+    .content-footer {
+        flex-direction: column;
+    }
+
+    .content-foo {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+}
